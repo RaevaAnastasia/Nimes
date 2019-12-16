@@ -92,8 +92,8 @@ function watch() {
       }
    });
 
-   gulp.watch('./src/styles/**/*.scss', styles);
-   gulp.watch('./src/styles/css/**/*.css').on('change', browserSync.reload);
+   gulp.watch('./src/style/**/*.scss', styles);
+   gulp.watch('./src/style/css/**/*.css').on('change', browserSync.reload);
    gulp.watch(['./src/js/**/*.js', '!./src/js/scripts.js'], scripts);
    gulp.watch('./src/*.html').on('change', gulp.series(minhtml, browserSync.reload));
 }

@@ -3,7 +3,7 @@
 .news {
     display: flex;
     margin-bottom: 13rem;
-    
+    border: 100px solid red;
 
     @media screen and (max-width: 768px) {
         margin-bottom: 9rem;
@@ -17,7 +17,6 @@
     &__img-wrap  {
         width: 60%;
         display: flex;
-        background-color: red;
 
         @media screen and (max-width: 768px) {
             width: 52%;
