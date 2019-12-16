@@ -1,0 +1,75 @@
+@import 'variables.scss';
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 13rem;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10rem;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        margin-bottom: 7rem;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__item {
+        width: 23%;
+
+        @media screen and (max-width: 768px) {
+            width: 47.7%;
+
+            &:nth-child(3) {
+                order: 1;
+            }
+
+            &:nth-child(4) {
+                padding-top: 5rem;
+            }
+        }
+    }
+    
+
+    &__img-wrap {
+        margin-bottom: 2rem;
+
+
+        &--big {
+            height: 35rem;
+        }
+
+        &--small {
+            height: 27rem;
+
+            @media screen and (max-width: 768px) {
+                height: 29rem;
+            }
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        font-weight: 500;
+        color: $black-color;
+    }
+}

@@ -1,0 +1,77 @@
+extends base.pug
+
+
+block content
+    main.main-content
+        div.baner
+            div.baner__wrap
+                p.baner__desc The quality you deserve
+                h1.baner__title DENIM
+                a.baner__link.button(href="#") Check new collection
+            p.baner__img-wrap
+                img.baner__img(src="assets/img/banner.png", alt="A girl in denim")
+            ul.baner__social
+                li.baner__social-item
+                    a.baner__social-link(href="#") Facebook
+                li.baner__social-item
+                    a.baner__social-link(href="#") Instagram
+        div.bestsellers.containers
+            h2.bestsellers__title.subtitle Bestsellers
+            a.bestsellers__all-link.link-all(href="#") View all
+            ul.bestsellers__list
+                li.bestsellers__item
+                    a.bestsellers__link(href="#")
+                        p.bestsellers__img-wrap
+                            img.bestsellers__img(src="assets/img/best-1.png" alt="Bestseller")
+                        span.bestsellers__name Jacket
+                        span.bestsellers__price $ 120
+                li.bestsellers__item
+                    a.bestsellers__link(href="#")
+                        p.bestsellers__img-wrap
+                            img.bestsellers__img(src="assets/img/best-2.png" alt="Bestseller")
+                        span.bestsellers__name Overalls
+                        span.bestsellers__price $ 140
+                li.bestsellers__item
+                    a.bestsellers__link(href="#")
+                        p.bestsellers__img-wrap
+                            img.bestsellers__img(src="assets/img/best-3.png" alt="Bestseller")
+                        span.bestsellers__name Jacket
+                        span.bestsellers__price $ 90
+                li.bestsellers__item
+                    a.bestsellers__link(href="#")
+                        p.bestsellers__img-wrap    
+                            img.bestsellers__img(src="assets/img/best-4.png" alt="Bestseller")
+                        span.bestsellers__name Overalls
+                        span.bestsellers__price $ 160
+        div.news.containers
+            p.news__img-wrap 
+                img.news__img(src="assets/img/collection.png" alt="A boy and a girl in denim")
+            div.news__wrapper
+                div.news__wrap
+                    p.news__desc Street fashion collection
+                    h2.news__title.subtitle Fall 2019
+                    a.news__link.button(href="#") Shop now
+        div.category.containers
+            h2.category__title.subtitle Shop by category
+            a.categoty__all-link.link-all(href="#") View all
+            ul.category__list
+                li.category__item
+                    a.categoty__link(href="#")
+                        p.category__img-wrap.category__img-wrap--big
+                            img.category__img(src="assets/img/category-1.png" alt="A girl in denim")
+                        h3.category__name Jeans
+                li.category__item
+                    a.categoty__link(href="#")
+                        p.category__img-wrap.category__img-wrap--small
+                            img.category__img(src="assets/img/category-2.png" alt="A man in denim")
+                        h3.category__name Shirts
+                li.category__item
+                    a.categoty__link(href="#")
+                        p.category__img-wrap.category__img-wrap--big
+                            img.category__img(src="assets/img/category-4.png" alt="A girl and a man in denim")
+                        h3.category__name Jackets
+                li.category__item
+                    a.categoty__link(href="#")
+                        p.category__img-wrap.category__img-wrap--small
+                            img.category__img(src="assets/img/category-3.png" alt="A girl in denim")
+                        h3.category__name Overalls

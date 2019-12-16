@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+.header {
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__cart-img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__search-img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        font-weight: 500;
+        color: $black-color;
+    }
+}

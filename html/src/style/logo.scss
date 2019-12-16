@@ -1,0 +1,14 @@
+@import "variables";
+
+.logo {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: $black-color;
+    font-weight: 800;
+    text-align: center;
+
+    &--white {
+        color: $white-color;
+    }
+}

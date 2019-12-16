@@ -1,0 +1,178 @@
+@import 'variables.scss';
+
+.baner {
+    background-color: $gray-background;
+    display: flex;
+    padding: 5rem 7% 5rem 19.5%;
+    margin-bottom: 13rem;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 8.3rem 4.5rem 4.5rem 13.3rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 10rem 5.4rem 5rem;
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        padding-top: 14rem;
+        margin-right: 9.5rem;
+        width: 31%;
+
+        @media screen and (max-width: 768px) {
+            width: 40%;
+            margin-right: 0;
+            padding-top: 8rem;
+        }
+
+        @media screen and (max-width: 576px)  {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        color: $gray-color;
+    }
+
+    &__title {
+        font-family: 'Anton', sans-serif;
+        font-size: 12.8rem;
+        line-height: 18.8rem;
+        color: $black-color;
+        margin-top: -2rem;
+        margin-bottom: 0.5rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 9.8rem;
+            line-height: 14.4rem;
+            margin-top: -1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 8.6rem;
+            line-height: 12.6rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__link {
+        margin-right: 9rem;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 1.5rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-right: 0;
+        }
+    }
+
+    &__img-wrap {
+        width: 42.5%;
+        position: relative;
+
+        @media screen and (max-width: 768px) {
+            width: 44.4%;
+            margin-right: 3rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            order: -1;
+            width: 100%;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 23.2rem;
+            height: 17.6rem;
+
+            @media screen and (max-width: 768px) {
+                width: 14.1rem;
+                height: 10.4rem;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 10.9rem;
+                height: 8rem;
+            }
+        }
+
+        &::before {
+            top: -5rem;
+            left: -5rem;
+            background: repeating-linear-gradient(45deg, #000000 0, #000000 1px, transparent 1px, transparent 12px);
+            
+            @media screen and (max-width: 768px) {
+                top: -3rem;
+                left: -3rem;
+            }
+
+            @media screen and (max-width: 576px) {
+                top: -2rem;
+                left: -2rem;
+            }
+        }
+
+        &::after {
+            bottom: -5rem;
+            right: -5rem;
+            background: repeating-linear-gradient(-45deg, #000000 0, #000000 1px, transparent 1px, transparent 12px);
+            
+            @media screen and (max-width: 768px) {
+                bottom: -3rem;
+                right: -3rem;
+            }
+
+            @media screen and (max-width: 576px) {
+                bottom: -2rem;
+                right: -2rem;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__social {
+        align-self: flex-end;
+        margin-left: auto;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            margin-top: 4rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__social-item {
+        margin-top: 2rem;
+
+        @media screen and (max-width: 768px) {
+            margin-left: 3.5rem;
+        }
+    }
+
+    &__social-link {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: $black-color;
+    }
+}
