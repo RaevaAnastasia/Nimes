@@ -4,7 +4,12 @@
     background-color: $gray-background;
     display: flex;
     padding: 5rem 7% 5rem 19.5%;
-    margin-bottom: 13rem;
+    margin-bottom: 12rem;
+    margin-top: 8rem;
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 5rem;
+    }
 
     @media screen and (max-width: 768px) {
         margin-bottom: 9rem;
@@ -16,10 +21,14 @@
         justify-content: space-between;
     }
 
+    @media screen and (max-width: 650px) {
+        padding-left: 7rem;
+    }
+
     @media screen and (max-width: 576px) {
         padding: 10rem 5.4rem 5rem;
         flex-direction: column;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
 
     &__wrap {
@@ -37,6 +46,7 @@
 
         @media screen and (max-width: 576px)  {
             width: 100%;
+            padding-top: 4rem;
         }
     }
 
@@ -62,12 +72,16 @@
         @media screen and (max-width: 576px) {
             font-size: 8.6rem;
             line-height: 12.6rem;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__link {
         margin-right: 9rem;
+
+        @media screen and (max-width: 1300px) {
+            margin-right: 6rem;
+        }
 
         @media screen and (max-width: 768px) {
             margin-right: 1.5rem;

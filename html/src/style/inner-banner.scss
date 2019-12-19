@@ -1,0 +1,103 @@
+@import 'variables.scss';
+
+.inner-banner {
+    background-color: $gray-background;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: 768px)  {
+        margin-bottom: 2.2rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding: 0 29.5rem;
+
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 4.5rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 0 1.5rem;
+        }
+    }
+
+    &__wrap {
+        padding: 7rem 0;
+        margin-right: 8.7rem;
+        width: 42%;
+
+        @media screen and (max-width: 1200px) {
+            margin-right: 4rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 7.5rem;
+            margin-right: 3rem;
+            width: auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 0;
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        max-width: 28rem;
+
+        @media screen and (max-width: 576px) {
+            display: none;
+        } 
+    }
+
+    &__img {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__img-wrap  {
+        position: relative;
+        display: flex;
+        width: 45%;
+
+        @media screen and (max-width: 768px) {
+            max-height: 26rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+        }
+
+        &::before {
+            width: 17.8rem;
+            height: 13.5rem;
+            bottom: 0;
+            left: -3rem;
+            background: repeating-linear-gradient(45deg, #000000 0, #000000 1px, transparent 1px, transparent 12px);
+        }
+
+        &::after {
+            top: 0;
+            right: -3rem;
+            background: repeating-linear-gradient(45deg, #000000 0, #000000 1px, transparent 1px, transparent 12px);
+            width: 23.2rem;
+            height: 17.6rem;
+        }
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 2rem;
+    }
+}

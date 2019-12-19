@@ -11,4 +11,9 @@
     &--white {
         color: $white-color;
     }
+
+    &:hover,
+    &:focus {
+        color: $gray-color;
+    }
 }
