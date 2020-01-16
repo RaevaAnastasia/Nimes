@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <title>Denim Shop Nîmes</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header containers">
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item"> <a class="header__link" href="#">Woman</a></li>
+          <li class="header__item"> <a class="header__link" href="#">Man</a></li>
+          <li class="header__item"> <a class="header__link" href="#">New</a></li>
+        </ul>
+        <button class="header__burger-menu" type="button"></button>
+        <button class="header__close" type="button">Close</button><a class="header__logo logo" href="index.html">Nîmes</a>
+        <div class="header__wrap"><a class="header__cart" href="#"><img class="header__cart-img" src="assets/img/cart.svg" alt="Cart"/></a><a class="header__search" href="#"><img class="header__search-img" src="assets/img/search.svg" alt="Search"/></a></div>
+      </nav>
+    </header>
+    <main class="page"> 
+      <div class="product">
+        <div class="product__slider slider">
+          <div class="product__slider-big">
+            <ul class="slider__list-big">
+              <li class="slider__item-big"><img class="slider__img" src="assets/img/product-1.png" alt="A girl in denim"/></li>
+              <li class="slider__item-big"><img class="slider__img" src="assets/img/product-2.png" alt="A girl in denim"/></li>
+              <li class="slider__item-big"><img class="slider__img" src="assets/img/product-3.png" alt="A girl in denim"/></li>
+              <li class="slider__item-big"><img class="slider__img" src="assets/img/product-4.png" alt="A girl in denim"/></li>
+              <li class="slider__item-big"><img class="slider__img" src="assets/img/product-5.png" alt="A girl in denim"/></li>
+            </ul>
+          </div>
+          <div class="product__slider-small">
+            <ul class="slider__list-small">
+              <li class="slider__item-small"><img class="slider__img" src="assets/img/product-1.png" alt="A girl in denim"/></li>
+              <li class="slider__item-small"><img class="slider__img" src="assets/img/product-2.png" alt="A girl in denim"/></li>
+              <li class="slider__item-small"><img class="slider__img" src="assets/img/product-3.png" alt="A girl in denim"/></li>
+              <li class="slider__item-small"><img class="slider__img" src="assets/img/product-4.png" alt="A girl in denim"/></li>
+              <li class="slider__item-small"><img class="slider__img" src="assets/img/product-5.png" alt="A girl in denim"/></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product__info"> 
+          <h1 class="product__title">Overalls</h1>
+          <p class="product__desc">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+          <form class="product__form" method="post" action="">
+            <fieldset class="product__set">
+              <legend class="product__set-name">Color</legend>
+              <p class="product__colors-wrap">
+                <input class="visually-hidden color__checkbox" type="radio" name="color" value="1" id="color-1" checked="checked"/>
+                <label class="color__label" for="color-1"></label>
+                <input class="visually-hidden color__checkbox" type="radio" name="color" value="2" id="color-2"/>
+                <label class="color__label" for="color-2"></label>
+                <input class="visually-hidden color__checkbox" type="radio" name="color" value="3" id="color-3"/>
+                <label class="color__label" for="color-3"></label>
+              </p>
+            </fieldset>
+            <fieldset class="product__set">
+              <legend class="product__set-name">Size</legend>
+              <p class="product__size-wrap">
+                <input class="visually-hidden product__size" type="radio" name="size" value="xs" id="xs" checked="checked"/>
+                <label class="product__size-label" for="xs">xs</label>
+                <input class="visually-hidden product__size" type="radio" name="size" value="s" id="s"/>
+                <label class="product__size-label" for="s">s</label>
+                <input class="visually-hidden product__size" type="radio" name="size" value="m" id="m"/>
+                <label class="product__size-label" for="m">m</label>
+                <input class="visually-hidden product__size" type="radio" name="size" value="l" id="l"/>
+                <label class="product__size-label" for="l">l</label>
+                <input class="visually-hidden product__size" type="radio" name="size" value="xl" id="xl"/>
+                <label class="product__size-label" for="xl">xl</label>
+              </p>
+            </fieldset><span class="product__price">$ 160</span>
+            <button class="button product__button" type="submit">Add to cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="offer containers">
+        <h2 class="subtitle offer__subtile">You may also like</h2><a class="link-all offer__view-all" href="#">View all</a>
+        <ul class="offer__list"> 
+          <li class="offer__item"><a class="offer__link" href="#"><img class="offer__img" src="assets/img/best-2.png" alt="A girl in denim"/>
+              <h2 class="offer__title">Overalls</h2><span class="offer__price">$ 140</span></a></li>
+          <li class="offer__item"><a class="offer__link" href="#"><img class="offer__img" src="assets/img/category-3.png" alt="A girl in denim"/>
+              <h2 class="offer__title">Overalls</h2><span class="offer__price">$ 110</span></a></li>
+          <li class="offer__item"><a class="offer__link" href="#"><img class="offer__img" src="assets/img/catalog-2.png" alt="A girl in denim"/>
+              <h2 class="offer__title">Jacket</h2><span class="offer__price">$ 70</span></a></li>
+          <li class="offer__item"><a class="offer__link" href="#"><img class="offer__img" src="assets/img/catalog-3.png" alt="A girl in denim"/>
+              <h2 class="offer__title">Jacket</h2><span class="offer__price">$ 60</span></a></li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="containers"><a class="footer__logo logo logo--white" href="index.html">Nîmes</a>
+        <ul class="footer__list">
+          <li class="footer__item"> <a class="footer__link" href="#">Shop</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Delivery</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Service</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Sitemap</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Contacts</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--facebook" href="#"></a></li>
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--inst" href="#"></a></li>
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--pinterest" href="#"></a></li>
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--tweeter" href="#"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
