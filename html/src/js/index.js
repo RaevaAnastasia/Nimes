@@ -6,6 +6,7 @@ var filterForm = document.querySelector('.filters__form');
 var filterName = document.querySelectorAll('.filters__name');
 var filterSet = document.querySelectorAll('.filters__wrap');
 var filterRange = document.querySelector('.filters__range');
+var sliderImg = document.querySelectorAll('.slider__img');
 
 if (burgerMenu) {
     burgerMenu.addEventListener('click', function(){
@@ -36,6 +37,12 @@ if (filterName) {
             this.classList.toggle('filters__name--open');
             this.nextSibling.classList.toggle('filters__wrap--show');
         });
+    }
+}
+
+if (window.innerWidth < 768) {
+    for (var i = 0; i < sliderImg.length; i++) {
+        sliderImg[i].style.height = sliderImg[i].offsetWidth * 1,1;
     }
 }
 

@@ -1,0 +1,83 @@
+extends base.pug
+
+block content 
+    main.page 
+        .product
+            .product__slider.slider
+                .product__slider-big
+                    ul.slider__list-big
+                        li.slider__item-big
+                            img.slider__img(src="assets/img/product-1.png", alt="A girl in denim")
+                        li.slider__item-big
+                            img.slider__img(src="assets/img/product-2.png", alt="A girl in denim")
+                        li.slider__item-big
+                            img.slider__img(src="assets/img/product-3.png", alt="A girl in denim")
+                        li.slider__item-big
+                            img.slider__img(src="assets/img/product-4.png", alt="A girl in denim")
+                        li.slider__item-big
+                            img.slider__img(src="assets/img/product-5.png", alt="A girl in denim")
+                div.product__slider-small
+                    ul.slider__list-small
+                        li.slider__item-small
+                            img.slider__img(src="assets/img/product-1.png", alt="A girl in denim")
+                        li.slider__item-small
+                            img.slider__img(src="assets/img/product-2.png", alt="A girl in denim")
+                        li.slider__item-small
+                            img.slider__img(src="assets/img/product-3.png", alt="A girl in denim")
+                        li.slider__item-small
+                            img.slider__img(src="assets/img/product-4.png", alt="A girl in denim")
+                        li.slider__item-small
+                            img.slider__img(src="assets/img/product-5.png", alt="A girl in denim")
+            div.product__info 
+                h1.product__title Overalls
+                p.product__desc Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.
+                form.product__form(method="post" action="")
+                    fieldset.product__set
+                        legend.product__set-name Color
+                        p.product__colors-wrap
+                            input.visually-hidden.color__checkbox(type="radio" name="color" value="1" id="color-1" checked)
+                            label.color__label(for="color-1")
+                            input.visually-hidden.color__checkbox(type="radio" name="color" value="2" id="color-2")
+                            label.color__label(for="color-2")
+                            input.visually-hidden.color__checkbox(type="radio" name="color" value="3" id="color-3")
+                            label.color__label(for="color-3")
+                    fieldset.product__set
+                        legend.product__set-name Size
+                        p.product__size-wrap
+                            input.visually-hidden.product__size(type="radio" name="size" value="xs" id="xs" checked)
+                            label.product__size-label(for="xs") xs
+                            input.visually-hidden.product__size(type="radio" name="size" value="s" id="s")
+                            label.product__size-label(for="s") s
+                            input.visually-hidden.product__size(type="radio" name="size" value="m" id="m")
+                            label.product__size-label(for="m") m
+                            input.visually-hidden.product__size(type="radio" name="size" value="l" id="l")
+                            label.product__size-label(for="l") l
+                            input.visually-hidden.product__size(type="radio" name="size" value="xl" id="xl")
+                            label.product__size-label(for="xl") xl
+                    span.product__price $ 160
+                    button.button.product__button(type="submit") Add to cart
+        div.offer.containers
+            h2.subtitle.offer__subtile You may also like
+            a.link-all.offer__view-all(href="#") View all
+            ul.offer__list 
+                li.offer__item
+                    a.offer__link(href="#")
+                        img.offer__img(src="assets/img/best-2.png", alt="A girl in denim")
+                        h2.offer__title Overalls
+                        span.offer__price $ 140
+                li.offer__item
+                    a.offer__link(href="#")
+                        img.offer__img(src="assets/img/category-3.png", alt="A girl in denim")
+                        h2.offer__title Overalls
+                        span.offer__price $ 110
+                li.offer__item
+                    a.offer__link(href="#")
+                        img.offer__img(src="assets/img/catalog-2.png", alt="A girl in denim")
+                        h2.offer__title Jacket
+                        span.offer__price $ 70
+                li.offer__item
+                    a.offer__link(href="#")
+                        img.offer__img(src="assets/img/catalog-3.png", alt="A girl in denim")
+                        h2.offer__title Jacket
+                        span.offer__price $ 60
+                        

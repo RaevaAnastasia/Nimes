@@ -14,14 +14,15 @@
     &__list-big {
         position: relative;
         width: 65%;
-        height: 52.3rem;
+        max-height: 52.3rem;
         margin-bottom: 2rem;
         margin: 0 7rem;
 
         @media screen and (max-width: 768px) {
-            margin: 0;
+            margin: 0 auto;
             max-height: 36rem;
             margin-bottom: 2rem;
+            width: 90%;
         }
 
         @media screen and (max-width: 576px) {
@@ -33,15 +34,21 @@
     }
 
     &__item-big {
-       max-height: 52.3rem;
+        max-height: 52.3rem;
         width: 100%;
 
         @media screen and (max-width: 768px) {
            max-height: 36rem;
+           width: 100%;
         }
 
         @media screen and (max-width: 576px) {
            max-height: 31rem;
+
+           & .slider__img {
+               max-height: 31rem;
+               object-fit: contain;
+           }
         }
     }
 
@@ -83,7 +90,8 @@
         margin: 0 7rem;
 
         @media screen and (max-width: 768px) {
-            margin: 0;
+            margin: 0 auto;
+            width: 90%;
         }
 
         @media screen and (max-width: 576px) {

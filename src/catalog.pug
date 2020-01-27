@@ -1,0 +1,119 @@
+extends base.pug 
+
+block content 
+    main.page 
+        div.inner-banner 
+            div.inner-banner__wrapper.containers
+                div.inner-banner__wrap
+                    ul.breadcrumbs.inner-banner__breadcrumbs
+                        li.breadcrumbs__item 
+                            a.breadcrumbs__link(href="#") All categories
+                        li.breadcrumbs__item 
+                            a.breadcrumbs__link(href="#") Woman
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link.breadcrumbs__link--active(href="#") Jackets
+                    h1.page__title.inner-banner__title Denim Collection Fall 2019
+                p.inner-banner__img-wrap    
+                    img.inner-banner__img(src="assets/img/inner-banner.png" alt="The letters: we see what we want")
+        div.filters.containers
+            h2.filters__title Filter by
+            form.filters__form(method="get" action="")
+                fieldset.filters__set 
+                    legend.filters__name Price
+                    div.filters__wrap
+                        .filters__range
+                        div.filters__range-wrap
+                            input.filters__range-min(type="text" name="min" placeholder="$40")
+                            input.filters__range-max(type="text" name="max" placeholder="$240")
+                fieldset.filters__set.filters__set--color
+                    legend.filters__name Color
+                    p.filters__wrap
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="1" id="color-1" checked)
+                        label.color__label(for="color-1")
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="2" id="color-2")
+                        label.fcolor__label(for="color-2")
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="3" id="color-3")
+                        label.color__label(for="color-3")
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="4" id="color-4")
+                        label.color__label(for="color-4")
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="5" id="color-5")
+                        label.color__label(for="color-5")
+                        input.visually-hidden.color__checkbox(type="checkbox" name="color" value="6" id="color-6")
+                        label.color__label(for="color-6")
+                fieldset.filters__set.filters__set--last
+                    legend.filters__name Collection
+                    p.filters__wrap
+                        input.filters__collection.visually-hidden(type="checkbox" name="collection" value="Casual" id="col-1") 
+                        label.filters__collection-name(for="col-1") Casual
+                        input.filters__collection.visually-hidden(type="checkbox" name="collection" value="Petite" id="col-2")
+                        label.filters__collection-name(for="col-2") Petite
+                        input.filters__collection.visually-hidden(type="checkbox" name="collection" value="Classic" id="col-3" checked)
+                        label.filters__collection-name(for="col-3") Classic
+                        input.filters__collection.visually-hidden(type="checkbox" name="collection" value="Soulluxe" id="col-4")
+                        label.filters__collection-name(for="col-4") Soulluxe
+                button.filters__button.button(type="submit") Apply (9 products)
+                button.filters__clear(type="button") Clear all
+
+
+
+        div.catalog.containers
+            ul.catalog__list
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-1.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 40
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-2.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 70
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-3.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 60
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-4.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 50
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-5.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 40
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-7.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 160
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-6.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 110
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-8.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 35
+                li.catalog__item
+                    a.catalog__link(href="#")
+                        p.catalog__img-wrap
+                            img.catalog__img(src="assets/img/catalog-9.png", alt="A girl in denim")
+                        h2.catalog__name Jacket
+                        span.catalog__price $ 85
+        div.result.containers
+            p.result__title Showing 9 of 45 items
+            div.result__bar
+                div.result__inner-bar 
+            button.result__more.button(type="button") Load more
